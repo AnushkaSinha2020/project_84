@@ -1,0 +1,43 @@
+<html>
+
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <script src="main.js"></script>
+
+  <title>Project 84</title>
+</head>
+
+<body onload="add();">
+
+  <center>
+    <h1>CAR RACING GAME</h1>
+    <h2>GAME STATUS : <span class="text-success" id="game_staus"></span></h2>
+    <canvas id="myCanvas" width="820" height="160"></canvas>
+    <h4>
+      <b class="text-danger">NOTE : </b> IF CARS ARE NOT VISIBLE PRESS THE BUTTON BELOW TO SEE HOW TO CONTROL
+    </h4>
+   
+    <button onclick="myFunction()">CONTROL OF THE CARS</button>
+  </center>
+</body>
+<script>
+  canvas = document.getElementById('myCanvas');
+ctx= canvas.getContext("2d");
+background_image= "race_track.jpg"
+car1_width = 80;
+car1_height = 70;
+car1_image = "car_1.png";
+car1_x = 30;
+car1_y = 20;
+car2_width = 80;
+car2_height = 50;
+car2_image = "car_2.png";
+car2_x = 30;
+car2_y = 90;
+</script>
+</html>
